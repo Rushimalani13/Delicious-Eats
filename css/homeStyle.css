@@ -1,0 +1,364 @@
+
+/* Flexbox Cards */
+.menu-container,
+.review-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.menu-item,
+.review {
+    flex: 0 0 45%;
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Color Palette */
+:root {
+    --primary-color: #FF5E62;
+    --secondary-color: #E87072;
+    --accent-color: #F9C5C5;
+    --background-color: #F4F4F4;
+    --text-color: #333;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FF5E62; /* Set your desired background color */
+    color: #333;
+}
+
+header {
+    background-image: url('../assets/img/restaurant-header.jpg'); /* Add your restaurant-themed image */
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 40px 0;
+}
+
+header h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+/* Navbar Styles */
+nav {
+    background-color: black;
+    padding: 20px;
+    font-family: 'Roboto', sans-serif; /* Add your preferred font */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    display: inline;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #333;
+    color: #FF5E62;
+}
+
+/* ... (existing styles) ... */
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav li {
+        margin: 10px 0;
+    }
+}
+section {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #333;
+}
+/* Flexbox Cards */
+.menu-container,
+.review-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap; /* Ensure cards stay in a single row */
+    overflow-x: auto; /* Enable horizontal scroll for small screens */
+    margin-top: 20px;
+}
+
+.menu-item,
+.review {
+    flex: 0 0 300px; /* Set a fixed width for each card */
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-item:hover,
+.review:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.menu-item img,
+.review img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.menu-item h3,
+.review h3 {
+    color: #333;
+}
+
+.menu-item p,
+.review p {
+    color: #666;
+}
+
+.menu-item span,
+.review span {
+    display: block;
+    color: #FF5E62;
+    margin-bottom: 10px;
+}
+
+.menu-item button,
+.review button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.menu-item button:hover,
+.review button:hover {
+    background-color: #555;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+    .menu-container,
+    .review-container {
+        flex-wrap: nowrap;
+    }
+}/* Flexbox Cards */
+.review-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap; /* Ensure cards stay in a single row */
+    overflow-x: auto; /* Enable horizontal scroll for small screens */
+    margin-top: 20px;
+}
+
+.review {
+    flex: 0 0 300px; /* Set a fixed width for each card */
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.review img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.review-content {
+    text-align: center;
+}
+
+.review h3 {
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.review p {
+    color: #666;
+}
+
+.review:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+    .review-container {
+        flex-wrap: nowrap;
+    }
+}
+
+/* Location Section */
+#locations {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.location {
+    background-color: #F9F9F9; /* Light background color */
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.location h3 {
+    color: #333;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.location p {
+    color: #666;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+#contact, #order {
+    background-color: #f9f9f9;
+}
+/* About Us Section */
+#about {
+    background-color: #F9F9F9;
+    text-align: center;
+    padding: 50px 0;
+}
+
+#about h2 {
+    color: #333;
+    font-family: 'Montserrat', sans-serif; /* Add your preferred font */
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+#about p {
+    color: #666;
+    font-family: 'Open Sans', sans-serif; /* Add another preferred font */
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-btn, .order-btn {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-btn:hover, .order-btn:hover {
+    background-color: #555;
+}
+
+.map-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.map {
+    width: 100%;
+    height: 300px;
+    border: none;
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons .icon {
+    color: #fff;
+    font-size: 1.5em;
+    margin-right: 10px;
+}
+
+
+/* Button Styles */
+.contact-btn,
+.order-btn,
+.menu-btn {
+    background-color: #FF5E62;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-btn:hover,
+.order-btn:hover,
+.menu-btn:hover {
+    background-color: #D83F45;
+}
+
